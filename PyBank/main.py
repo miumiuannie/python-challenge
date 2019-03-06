@@ -26,8 +26,6 @@ with open(csvpath,newline="") as csvfile:
         date_list.append((row[0]))
         total_months += 1
         total_revenue += int(row[1])
-        #total_revenue += 1
-        #profit_losses_list.append(float(row[1]))
     
     # Build list of Profit/Losses changes month to month and calculate change
         change = int(row[1])-value
